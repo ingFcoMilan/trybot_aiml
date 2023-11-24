@@ -14,7 +14,7 @@
     </category>
     
     <category>
-    <pattern>ENTRADAS</pattern>
+    <pattern>ENTRADA</pattern>
         <template>De entradas tenemos 
         <ul>
             <li> Palitos de apio </li>
@@ -36,21 +36,31 @@
         <pattern>* palitos de apio</pattern>
         <template> Enseguida le traigo los palitos de apio </template>
         <br></br>
-        Me comenta si quiere que le diga las sopas
+        <!--Me comenta si quiere que le diga las sopas-->
     </category>
     
      <category>
         <pattern>* ensalada del mar </pattern>
         <template> Enseguida le traigo la ensalada del mar </template>
         <br></br>
-        Me comenta si quiere que le diga las sopas 
+        <!--Me comenta si quiere que le diga las sopas-->
     </category>
        
     <category>
         <pattern>* fruta finamente picada </pattern>
         <template> Enseguida le traigo la fruta finamente picada </template>
         <br></br>
-        Me comenta si quiere que le diga las sopas
+        <!--Me comenta si quiere que le diga las sopas-->
+    </category>
+    
+    <category>
+        <pattern>* no quiero una entrada </pattern>
+        <template>
+            Lamaento que no tengamos entradas de sus agrado
+            <br>
+                Me comenta si quiere que pasemos a las sopas
+            </br>
+        </template>
     </category>
     
     <category>
@@ -91,7 +101,7 @@
     </category>
     
     <category>
-        <pattern>* No quiero alguna sopa </pattern>
+        <pattern>* No quiero ninguna sopa </pattern>
         <template> Lo lamento, que no tengamos alguno de su agrado 
          <br></br>
         Le sugiero que pasemos a los platos fuertes
@@ -129,7 +139,7 @@
 
    <category>
         <pattern>SI</pattern>
-        <template>En un momento le traigo su postre su majestad </template>
+        <template>En un momento le traigo su postre </template>
        <!-- <that> Tenemos: <ul>
              <li>Pastel de tres leches</li>
             <li>Pastel imposible</li>
@@ -141,7 +151,7 @@
 
 <category>
     <pattern>NO</pattern>
-    <template>Entendido, Si desea algo mas escriba "OYE"</template>
+    <template>Entendido, Si desea algo mas escriba "HOLA" o escriba por ejemplo "QUIERO OTRO POSTRE"</template>
         <!-- <that> Tenemos: <ul>
              <li>Pastel de tres leches</li>
             <li>Pastel imposible</li>
@@ -157,28 +167,50 @@
     </category>
     
     <category>
-        <pattern>ADIOS</pattern>
-        <template>Le agradezco su consumo.
+        <pattern>NO SERIA TODO LA * PORFAVOR</pattern>
+        <template>Enseguida le traigo la <star/>
+        <br>
+            Es un total de 600
+        </br>
         <br></br>
         Deje su propina de minimo el 15% por favor.
         <br></br>
         Ah, es sobre el total con el iva 
         <br></br>
-        Y solo aceptamos American Express
         </template>
     </category>
     
     <category>
+        <pattern>Te pago</pattern>
+        <template> Claro que si, 
+        <br>
+            Solo aceptamos pago con tarjeta
+        </br>
+        <br>        </br>
+            Y solo aceptamos American Express
+        </template>
+    </category>
+    
+
+    <category>
         <pattern>* LA PROPINA ES OPCIONAL</pattern>
-        <template> Asi es, en otros restaurantes pero aqui es obligatoria. </template>
+        <template> Asi es, en otros restaurantes pero aqui en LeLuxe es obligatoria. </template>
     </category>
     
     <category>
         <pattern> YA ME HICISTE ENOJAR</pattern>
-        <template>Una disculpa, pero usted no soporto y la que SOPORTE!, bye</template>
+        <template>Una disculpa, pero usted no soporto!, bye</template>
     </category>
    
- 
+     <category>
+        <pattern>ADIOS</pattern>
+        <template>Le agradezco su consumo.
+    <br>    </br>
+        Que tenga un LeLuxe dia =)
+
+        </template>
+    </category>
+    
     
 </aiml>
 
