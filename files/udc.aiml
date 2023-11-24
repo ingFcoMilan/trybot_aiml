@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>No puedo entenderte, por favor dime "hola".</template>
+  </category>
+</aiml>
