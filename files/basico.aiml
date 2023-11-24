@@ -1,23 +1,134 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-<category>
+
+    <category>
         <pattern>HOLA</pattern>
-        <template>Bienvenid@. ¿Quieres saber suales son las entradas o vamos a la sopa ?< /template>
+        <template>
+            <random>
+                <li>Bienvenid@ a LeLuxe. ¿Quieres saber cuales son las entradas o vamos a la sopa ? </li>
+                <li>Buen dia, esta en LeLuxe, ¿toma entrada o empieza con la sopa ?  </li>
+                <li>Sea bienvenid@ a LeLuxe, ¿le digo las entradas o pasamos a la sopa ?</li>
+                <li>Muy buen dia bienveni@ a LeLuxe, ¿quiere saber las entradas o elige sopa de una vez ?</li>
+            </random>
+        </template>
     </category>
+    
     <category>
     <pattern>ENTRADAS</pattern>
-        <template>Tenemos palitos de apio, ensalada o fruta picada</template>
+        <template>De entradas tenemos 
+        <ul>
+            <li> Palitos de apio </li>
+            <li> Ensalada7 </li>
+            <li> Fruta picada </li>
+        </ul> 
+        O prefiere que pasemos a las sopas?
+        </template>
     </category>
+    
+    
     <category>
-        <pattern>SOPA</pattern>
-        <template>¿Quieres sopa del dia o consomé ?< /template>
+        <pattern>* SOPAS</pattern>
+        <template>¿Desea sopa del dia o 
+        <ul>
+            <li> consomé </li>
+            <li> o crema de elote </li>
+            <li> o crema de quesos </li>
+        </ul> Me avisa si quiere ir pidiendo uno de los guisados
+        </template>
     </category>
+    
     <category>
         <pattern>* ENTRADAS</pattern>
         <template>
             <srai>ENTRADAS</srai>
         </template>
     </category>
+    
+    <category>
+        <pattern> LA * ESTA FRIA</pattern>
+        <template>Una enorme disculpa, llevo su <star/> a calentar</template>
+    </category>
+    
+    <category>
+        <pattern>* GUISADOS</pattern>
+        <template>Los platos fuertes son:
+            <ul>
+                <li>Rib eye a las finas hiervas</li>
+                <li>Cordero asado con un grill de cereza</li>
+                <li>Boneles de 250gr con salsa tradicional de la casa</li>
+            </ul> Cual desea?
+            O prefiere un postre?
+        </template>
+    </category>
+        <category>
+        <pattern> EL * ESTA FRIO</pattern>
+        <template>Una enorme disculpa, llevo su <star/> a calentar</template>
+    </category>
+    
+    <category>
+        <pattern>* POSTRE</pattern>
+        <template> Tenemos: <ul>
+             <li>Pastel de tres leches</li>
+            <li>Pastel imposible</li>
+            <li>Galleta macaron</li>
+            <li>Panna cota de chocolate</li>
+            </ul> 
+            Desea alguno?
+        </template>
+    </category>
+
+   <category>
+        <pattern>SI</pattern>
+        <template>En un momento le traigo su postre su majestad </template>
+       <!-- <that> Tenemos: <ul>
+             <li>Pastel de tres leches</li>
+            <li>Pastel imposible</li>
+            <li>Galleta macaron</li>
+            <li>Panna cota de chocolate</li>
+            </ul> 
+            Desea alguno?</that> -->
+    </category>
+
+<category>
+    <pattern>NO</pattern>
+    <template>Entendido, Si desea algo mas escriba "OYE"</template>
+        <!-- <that> Tenemos: <ul>
+             <li>Pastel de tres leches</li>
+            <li>Pastel imposible</li>
+            <li>Galleta macaron</li>
+            <li>Panna cota de chocolate</li>
+            </ul> 
+            Desea alguno?</that> -->
+</category>
+    
+    <category>
+        <pattern>GRACIAS</pattern>
+        <template>Denada es un placer, desea algo mas?</template>
+    </category>
+    
+    <category>
+        <pattern>ADIOS</pattern>
+        <template>Le agradezco su consumo.
+        <br></br>
+        Deje su propina de minimo el 15% por favor.
+        <br></br>
+        Ah, es sobre el total con el iva 
+        <br></br>
+        Y solo aceptamos American Express
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* LA PROPINA ES OPCIONAL</pattern>
+        <template> Asi es, en otros restaurantes pero aqui es obligatoria. </template>
+    </category>
+    
+    <category>
+        <pattern> YA ME HICISTE ENOJAR</pattern>
+        <template>Una disculpa, pero usted no soporto y la que SOPORTE!, bye</template>
+    </category>
+   
+ 
+    
 </aiml>
 
