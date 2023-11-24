@@ -18,22 +18,10 @@
         <template>De entradas tenemos 
         <ul>
             <li> Palitos de apio </li>
-            <li> Ensalada7 </li>
-            <li> Fruta picada </li>
+            <li> Ensalada del mar </li>
+            <li> Fruta finamente picada </li>
         </ul> 
         O prefiere que pasemos a las sopas?
-        </template>
-    </category>
-    
-    
-    <category>
-        <pattern>* SOPAS</pattern>
-        <template>¿Desea sopa del dia o 
-        <ul>
-            <li> consomé </li>
-            <li> o crema de elote </li>
-            <li> o crema de quesos </li>
-        </ul> Me avisa si quiere ir pidiendo uno de los guisados
         </template>
     </category>
     
@@ -45,12 +33,73 @@
     </category>
     
     <category>
+        <pattern>* palitos de apio</pattern>
+        <template> Enseguida le traigo los palitos de apio </template>
+        <br></br>
+        Me comenta si quiere que le diga las sopas
+    </category>
+    
+     <category>
+        <pattern>* ensalada del mar </pattern>
+        <template> Enseguida le traigo la ensalada del mar </template>
+        <br></br>
+        Me comenta si quiere que le diga las sopas 
+    </category>
+       
+    <category>
+        <pattern>* fruta finamente picada </pattern>
+        <template> Enseguida le traigo la fruta finamente picada </template>
+        <br></br>
+        Me comenta si quiere que le diga las sopas
+    </category>
+    
+    <category>
+        <pattern>* SOPAS</pattern>
+        <template>¿Desea sopa del dia o 
+        <ul>
+            <li> consomé de langosta</li>
+            <li> o crema de elote </li>
+            <li> o crema de quesos </li>
+        </ul> 
+        </template>
+    </category>
+    
+    <category>
+        <pattern> * consomé de langosta </pattern>
+        <template> Muy buena eleccion señor@ enseguida le traigo el consome de langosta</template>
+        <br></br>
+        Me avisa si quiere ir pidiente uno de los platos fuertes
+    </category>
+    
+    <category>
+        <pattern> * crema de elote</pattern>
+        <template> Muy buena elecccion señor@ enseguida le traigo la crema de elote</template>
+        <br></br>
+        Me avisa si quiere ir pidiente uno de los platos fuertes
+    </category>
+    
+    <category>
+        <pattern>* crema de quesos</pattern>
+        <template> Muy buena eleccion señor@ enseguida le traigo la crema de quesos </template>
+        <br></br>
+        Me avisa si quiere ir pidiente uno de los platos fuertes
+    </category>
+    
+    <category>
         <pattern> LA * ESTA FRIA</pattern>
         <template>Una enorme disculpa, llevo su <star/> a calentar</template>
     </category>
     
     <category>
-        <pattern>* GUISADOS</pattern>
+        <pattern>* No quiero alguna sopa </pattern>
+        <template> Lo lamento, que no tengamos alguno de su agrado 
+         <br></br>
+        Le sugiero que pasemos a los platos fuertes
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* platos fuertes </pattern>
         <template>Los platos fuertes son:
             <ul>
                 <li>Rib eye a las finas hiervas</li>
@@ -60,7 +109,8 @@
             O prefiere un postre?
         </template>
     </category>
-        <category>
+    
+    <category>
         <pattern> EL * ESTA FRIO</pattern>
         <template>Una enorme disculpa, llevo su <star/> a calentar</template>
     </category>
